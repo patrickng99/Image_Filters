@@ -68,6 +68,14 @@ function makeRainbow() {
   }
 }
 
+function download() {
+  var canv = document.getElementById("canv");
+  var link = document.getElementById("link");
+  link.setAttribute("download", "filtered.png");
+  link.setAttribute("href", canv.toDataURL("image/png").replace("image/octet-stream"));
+  link.click();
+}
+
 function makeCustom() {
   if (notLoaded(original) == false) {
     customImage = filterCustom(customImage);
