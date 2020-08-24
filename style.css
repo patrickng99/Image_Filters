@@ -51,6 +51,9 @@ p {
 #rainbow:hover {
   background-image: linear-gradient(red, orange, green, blue);
 }
+#download:hover {
+  background-color: #1E90FF
+}
 #rst:hover {
   background-color: #e7e7e7;
 }
